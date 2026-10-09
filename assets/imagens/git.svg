@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="8 8 184 184" role="img" aria-labelledby="title">
+  <title id="title">Git logo</title>
+  <g transform="translate(12 12)">
+    <path fill="#F05032" d="M88 0 176 88 88 176 0 88Z"/>
+    <g fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M62 55v64M62 87h37V55"/>
+    </g>
+    <g fill="#fff">
+      <circle cx="62" cy="55" r="10"/><circle cx="62" cy="119" r="10"/><circle cx="99" cy="87" r="10"/><circle cx="99" cy="55" r="10"/>
+    </g>
+  </g>
+  <text x="207" y="151" font-family="Arial, Helvetica, sans-serif" font-size="128" font-weight="700" letter-spacing="-7" fill="#3E2C00">git</text>
+</svg>
