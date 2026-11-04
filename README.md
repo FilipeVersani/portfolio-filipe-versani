@@ -4,7 +4,7 @@
 
 Bem-vindo ao meu espaço de projetos! Este repositório reúne meu portfólio pessoal e demonstra minhas habilidades e experiências em **Desenvolvimento Web**, com atuação consolidada em Front-End e experiência Full-Stack em sistemas corporativos.
 
-Sou **Desenvolvedor Full-Stack Jr.** na [Exent](https://www.exent.com.br), onde sou responsável pelo desenvolvimento e manutenção do **Space**, o sistema corporativo interno da empresa, além da criação de portais B2B, landing pages e sites institucionais de alta performance.
+Sou **Desenvolvedor Full-Stack Jr.** na [Exent](https://www.exent.com.br), onde sou responsável pelo desenvolvimento e manutenção do **Space**, o sistema corporativo interno da empresa, e pelo **Exent CRM**, o CRM do time comercial, além da criação de portais B2B, landing pages e sites institucionais de alta performance.
 
 Meu foco é construir interfaces atraentes, responsivas e rápidas, traduzindo layouts de alta fidelidade (Figma/Photoshop) em código semântico, sempre garantindo a melhor Experiência do Usuário (UX).
 
@@ -14,25 +14,37 @@ Meu foco é construir interfaces atraentes, responsivas e rápidas, traduzindo l
 
 Plataforma corporativa full-stack que centraliza ferramentas internas da Exent: criação de conteúdo para blog e redes sociais, ferramentas de imagem e e-mail marketing e configurações administrativas.
 
-- **Stack:** Laravel 12, React, TypeScript, Zustand, Tailwind CSS, Vite e SQL
+- **Stack:** Laravel 12, React, TypeScript, Zustand, Tailwind CSS, Vite, SQL e MongoDB
 - **Módulos sob minha responsabilidade:** DISC (perfil comportamental), Recrutamento e Seleção (R&S) e Relatórios de Uso
 - **Atuação:** do levantamento de requisitos ao deploy, incluindo a criação de novos módulos
+
+---
+
+## 📇 Destaque: Exent CRM (Sistema Comercial)
+
+CRM interno do time comercial da Exent, inspirado no Pipedrive e desenvolvido por mim de ponta a ponta com apoio de ferramentas de IA. Está em uso com todo o histórico migrado do Pipedrive.
+
+- **Stack:** React, TypeScript, TanStack Start (Router e Query), Tailwind CSS, shadcn/ui, Vite e PostgreSQL (Supabase / Lovable Cloud)
+- **Funcionalidades:** caixa de entrada de leads com triagem e distribuição automática, negócios em Kanban, pessoas, empresas, atividades, anotações com linha do tempo e temas claro e escuro
+- **Banco de dados:** regras de negócio em funções e gatilhos PL/pgSQL, segurança por linha (RLS) em todas as tabelas e migrations versionadas
+- **Integrações:** recebimento de leads por webhook (site WordPress em PHP) e migração dos dados do Pipedrive pela API
+- **Fluxo com IA:** Lovable para banco e hospedagem, Claude Code para telas e integrações, com versionamento no GitHub
 
 ---
 
 ## 🛠️ Stack Tecnológica
 
 **Full-Stack / Sistema Interno**
-Laravel 12 · React · TypeScript · Zustand · Tailwind CSS · Vite · SQL
+Laravel 12 · React · TypeScript · Zustand · TanStack · Tailwind CSS · Vite · SQL · MongoDB
 
 **Front-End**
 HTML5 · CSS3 · JavaScript (ES6+) · React · jQuery · Figma · Webflow · Swiper.js
 
 **Back-End, CMS e Banco de Dados**
-PHP · Laravel 12 · Node.js · Python · SQL · WordPress (temas customizados, Custom Post Types e ACF)
+PHP · Laravel 12 · Node.js · Python · SQL · PostgreSQL · MongoDB · Supabase · WordPress (temas customizados, Custom Post Types e ACF)
 
 **Ferramentas**
-Git · GitHub · Postman · APIs RESTful · Claude Code
+Git · GitHub · Postman · APIs RESTful · Claude Code · Lovable
 
 ---
 
@@ -69,11 +81,11 @@ Git · GitHub · Postman · APIs RESTful · Claude Code
 
 Site estático feito com **HTML5, CSS3 e JavaScript puro**, sem frameworks nem etapa de build.
 
-- Seções de Sobre mim, Experiência, Space, Habilidades e Projetos (B2B e Hotsites/LPs)
+- Seções de Sobre mim, Experiência, Space, Exent CRM, Habilidades e Projetos (B2B e Hotsites/LPs)
 - Animações de entrada ao rolar a página (Intersection Observer)
 - Menu fixo com efeito de vidro fosco, barra de progresso de leitura e destaque da seção ativa
 - Cards de projetos com inclinação 3D sutil e verso com as tecnologias utilizadas
-- Galeria do Space com visualização ampliada (lightbox)
+- Galerias do Space e do Exent CRM com visualização ampliada (lightbox)
 - Layout responsivo e respeito à preferência de "reduzir movimento" do sistema
 
 ### Como rodar localmente
@@ -81,7 +93,7 @@ Site estático feito com **HTML5, CSS3 e JavaScript puro**, sem frameworks nem e
 Basta clonar o repositório e abrir o `index.html` no navegador:
 
 ```bash
-git clone https://github.com/filipeversani/portifolio.git
+git clone https://github.com/FilipeVersani/portfolio-filipe-versani.git
 ```
 
 ### Estrutura

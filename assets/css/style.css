@@ -969,17 +969,17 @@ main>.btn-top svg {
 
 /* Space - Sistema Interno */
 
-#space {
+:is(#space, #crm) {
     margin-bottom: 100px;
 }
 
-#space .content {
+:is(#space, #crm) .content {
     width: 1275px;
     max-width: 90%;
     margin: 0 auto;
 }
 
-#space .content>.titulo {
+:is(#space, #crm) .content>.titulo {
     width: 100%;
     text-align: center;
     color: #fff;
@@ -990,7 +990,7 @@ main>.btn-top svg {
     margin-bottom: 30px;
 }
 
-#space .content>.sub {
+:is(#space, #crm) .content>.sub {
     color: #fff;
     font-size: 18px;
     line-height: 33px;
@@ -998,13 +998,13 @@ main>.btn-top svg {
     text-align: center;
 }
 
-#space .box-space {
+:is(#space, #crm) .box-space {
     display: flex;
     column-gap: 4%;
     align-items: flex-start;
 }
 
-#space .info {
+:is(#space, #crm) .info {
     width: 32%;
     background-color: #272727;
     border: 1px solid var(--azul);
@@ -1012,13 +1012,13 @@ main>.btn-top svg {
     padding: 30px;
 }
 
-#space .info .descricao {
+:is(#space, #crm) .info .descricao {
     color: #fff;
     line-height: 26px;
     margin-bottom: 30px;
 }
 
-#space .info .subtitulo {
+:is(#space, #crm) .info .subtitulo {
     color: var(--azul);
     font-family: var(--oswald);
     text-transform: uppercase;
@@ -1026,7 +1026,7 @@ main>.btn-top svg {
     margin-bottom: 15px;
 }
 
-#space .info .modulos {
+:is(#space, #crm) .info .modulos {
     list-style: disc;
     padding-left: 22px;
     display: flex;
@@ -1035,39 +1035,39 @@ main>.btn-top svg {
     margin-bottom: 30px;
 }
 
-#space .info .modulos li {
+:is(#space, #crm) .info .modulos li {
     color: #fff;
     line-height: 22px;
 }
 
-#space .info .modulos li b {
+:is(#space, #crm) .info .modulos li b {
     font-weight: 700;
 }
 
-#space .info .modulos li::marker {
+:is(#space, #crm) .info .modulos li::marker {
     color: var(--azul);
 }
 
-#space .info .tecnologias {
+:is(#space, #crm) .info .tecnologias {
     display: flex;
     flex-wrap: wrap;
     gap: 18px;
 }
 
-#space .info .tecnologias img {
+:is(#space, #crm) .info .tecnologias img {
     width: 30px;
     height: 30px;
     object-fit: contain;
 }
 
-#space .galeria {
+:is(#space, #crm) .galeria {
     width: 64%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
-#space .galeria .item {
+:is(#space, #crm) .galeria .item {
     position: relative;
     padding: 0;
     border: 1px solid rgba(63, 142, 251, 0.4);
@@ -1078,16 +1078,16 @@ main>.btn-top svg {
     transition: 0.2s all ease-in-out;
 }
 
-#space .galeria .item.destaque {
+:is(#space, #crm) .galeria .item.destaque {
     grid-column: 1 / -1;
 }
 
-#space .galeria .item:hover {
+:is(#space, #crm) .galeria .item:hover {
     border-color: var(--azul);
     box-shadow: 0px 0px 20px rgba(63, 142, 251, 0.35);
 }
 
-#space .galeria .item img {
+:is(#space, #crm) .galeria .item img {
     width: 100%;
     height: 100%;
     display: block;
@@ -1097,15 +1097,15 @@ main>.btn-top svg {
     transition: 0.3s transform ease-in-out;
 }
 
-#space .galeria .item.destaque img {
+:is(#space, #crm) .galeria .item.destaque img {
     aspect-ratio: 16 / 8;
 }
 
-#space .galeria .item:hover img {
+:is(#space, #crm) .galeria .item:hover img {
     transform: scale(1.03);
 }
 
-#space .galeria .item .legenda {
+:is(#space, #crm) .galeria .item .legenda {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -1119,7 +1119,7 @@ main>.btn-top svg {
     box-sizing: border-box;
 }
 
-#space .lightbox {
+:is(#space, #crm) .lightbox {
     position: fixed;
     inset: 0;
     background-color: rgba(0, 0, 0, 0.9);
@@ -1140,24 +1140,24 @@ body.trava-scroll {
     overflow: hidden;
 }
 
-#space .lightbox.aberto {
+:is(#space, #crm) .lightbox.aberto {
     opacity: 1;
     pointer-events: all;
 }
 
-#space .lightbox img {
+:is(#space, #crm) .lightbox img {
     max-width: 100%;
     max-height: 85vh;
     border-radius: 10px 0 10px 0;
     border: 1px solid var(--azul);
 }
 
-#space .lightbox .legenda {
+:is(#space, #crm) .lightbox .legenda {
     color: #fff;
     font-size: 16px;
 }
 
-#space .lightbox .fechar {
+:is(#space, #crm) .lightbox .fechar {
     position: absolute;
     top: 20px;
     right: 30px;
@@ -1169,7 +1169,7 @@ body.trava-scroll {
     line-height: 1;
 }
 
-#space .lightbox .fechar:hover {
+:is(#space, #crm) .lightbox .fechar:hover {
     color: var(--azul);
 }
 
@@ -1349,13 +1349,13 @@ footer p {
         font-size: 14px;
     }
 
-    #space .box-space {
+    :is(#space, #crm) .box-space {
         flex-direction: column-reverse;
         row-gap: 30px;
     }
 
-    #space .info,
-    #space .galeria {
+    :is(#space, #crm) .info,
+    :is(#space, #crm) .galeria {
         width: 100%;
     }
 }
@@ -1440,23 +1440,23 @@ footer p {
         margin-bottom: 40px;
     }
 
-    #space .content>.titulo,
+    :is(#space, #crm) .content>.titulo,
     #habilidades .content>.titulo,
     #experiencia .content .titulo {
         font-size: 32px;
         margin-bottom: 40px;
     }
 
-    #space .content>.sub {
+    :is(#space, #crm) .content>.sub {
         font-size: 16px;
         line-height: 28px;
     }
 
-    #space .galeria {
+    :is(#space, #crm) .galeria {
         grid-template-columns: 1fr;
     }
 
-    #space .info {
+    :is(#space, #crm) .info {
         padding: 20px;
     }
 
@@ -1539,7 +1539,7 @@ body {
 
 /* Revelar elementos ao rolar */
 
-:is(#sobre-mim, #experiencia, #space, #habilidades, #projetos) .reveal {
+:is(#sobre-mim, #experiencia, #space, #crm, #habilidades, #projetos) .reveal {
     opacity: 0;
     translate: 0 28px;
     transition-property: opacity, translate, transform, box-shadow, border-color;
@@ -1548,7 +1548,7 @@ body {
     transition-delay: var(--delay, 0s), var(--delay, 0s), 0s, 0s, 0s;
 }
 
-:is(#sobre-mim, #experiencia, #space, #habilidades, #projetos) .reveal.visivel {
+:is(#sobre-mim, #experiencia, #space, #crm, #habilidades, #projetos) .reveal.visivel {
     opacity: 1;
     translate: 0 0;
 }
@@ -1667,16 +1667,16 @@ body {
 
 /* Lightbox do Space */
 
-#space .lightbox img {
+:is(#space, #crm) .lightbox img {
     transform: scale(0.94);
     transition: transform 0.3s cubic-bezier(0.2, 0.7, 0.2, 1);
 }
 
-#space .lightbox.aberto img {
+:is(#space, #crm) .lightbox.aberto img {
     transform: scale(1);
 }
 
-#space .lightbox {
+:is(#space, #crm) .lightbox {
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
 }
@@ -1688,7 +1688,7 @@ body {
         scroll-behavior: auto;
     }
 
-    :is(#sobre-mim, #experiencia, #space, #habilidades, #projetos) .reveal {
+    :is(#sobre-mim, #experiencia, #space, #crm, #habilidades, #projetos) .reveal {
         opacity: 1;
         translate: none;
         transition: none;

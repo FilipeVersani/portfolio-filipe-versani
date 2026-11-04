@@ -42,6 +42,7 @@
                                 <li><a href="#sobre-mim">Sobre mim</a></li>
                                 <li><a href="#experiencia">Experiência</a></li>
                                 <li><a href="#space">Space</a></li>
+                                <li><a href="#crm">CRM</a></li>
                                 <li><a href="#habilidades">Habilidades</a></li>
                                 <li><a href="#projetos">Projetos</a></li>
                             </ul>
@@ -78,7 +79,7 @@
                         <h1 class="nome">Filipe Versani</h1>
                         <h2 class="dev">Desenvolvedor Full-Stack Jr</h2>
                         <p class="descricao"><b>Educação:</b> Formado em Análise e Desenvolvimento de Sistemas (Universidade Presbiteriana Mackenzie) e cursando Bacharelado em Engenharia de Software (UNICID).</p>
-                        <p class="descricao"><b>Foco Principal:</b> Desenvolvedor Full-Stack Jr. com atuação consolidada em Front-End, responsável pelo desenvolvimento e manutenção do <b>Space</b>, o sistema corporativo interno da Exent, construído em Laravel 12, React, TypeScript, Zustand, Tailwind CSS, Vite e SQL.</p>
+                        <p class="descricao"><b>Foco Principal:</b> Desenvolvedor Full-Stack Jr. com atuação consolidada em Front-End, responsável pelo desenvolvimento e manutenção do <b>Space</b>, o sistema corporativo interno da Exent, construído em Laravel 12, React, TypeScript, Zustand, Tailwind CSS, Vite, SQL e MongoDB. Também desenvolvi o <b>Exent CRM</b>, o CRM interno do time comercial, em React, TypeScript e PostgreSQL.</p>
                         <p class="descricao"><b>Experiência e Habilidade:</b> Criação de interfaces web responsivas e de alta performance para o mercado B2B, com sólida experiência no ecossistema WordPress, tradução de layouts de alta fidelidade (Figma/Photoshop) em código semântico e otimização de Core Web Vitals.</p>
                         <p class="descricao"><b>Perfil:</b> Analítico, focado na resolução de problemas sistêmicos e na entrega de plataformas corporativas robustas.</p>
                         <p class="descricao">Convido você a explorar meu trabalho, que reflete meu comprometimento com a excelência em desenvolvimento.</p>
@@ -107,12 +108,13 @@
                         </div>
                         <p class="cargo">Desenvolvedor Full-Stack Jr</p>
                         <ul>
-                            <li><b>Sistema Interno Space (Full-Stack):</b> Responsável pela manutenção e pelo desenvolvimento de novos módulos do Space, sistema corporativo interno, utilizando Laravel 12, React, TypeScript, Zustand, Tailwind CSS, Vite e SQL.</li>
+                            <li><b>Sistema Interno Space (Full-Stack):</b> Responsável pela manutenção e pelo desenvolvimento de novos módulos do Space, sistema corporativo interno, utilizando Laravel 12, React, TypeScript, Zustand, Tailwind CSS, Vite, SQL e MongoDB.</li>
                             <li><b>Módulos sob responsabilidade:</b> DISC (perfil comportamental), Recrutamento e Seleção (R&amp;S) e Relatórios de Uso, atuando do levantamento de requisitos ao deploy.</li>
                             <li><b>Desenvolvimento de Portais B2B:</b> Planejamento e criação ponta a ponta de sites corporativos responsivos, focados na captação de leads e geração de valor para o negócio.</li>
                             <li><b>Otimização de Performance (Core Web Vitals):</b> Refatoração de código e otimização de ativos, resultando em carregamentos mais rápidos e impacto direto no aumento da taxa de conversão de landing pages.</li>
                             <li><b>Engenharia de Front-End:</b> Conversão "pixel-perfect" de layouts de alta fidelidade (Figma e Photoshop) utilizando HTML5, CSS3, JavaScript, React e jQuery com código semântico e manutenível.</li>
                             <li><b>Desenvolvimento WordPress Avançado:</b> Implementação de funcionalidades dinâmicas e painéis administrativos personalizados através de Custom Post Types, Custom Fields e PHP.</li>
+                            <li><b>Exent CRM (Full-Stack):</b> Desenvolvimento do CRM interno do time comercial, do banco às telas: PostgreSQL com funções, gatilhos e segurança por linha (RLS), interface em React e TypeScript com TanStack Start, recebimento de leads por webhook e migração completa do histórico do Pipedrive.</li>
                             <li><b>Integração e Automação:</b> Integração de aplicações web com APIs RESTful e otimização de fluxos de desenvolvimento com apoio de Inteligência Artificial (Claude Code).</li>
                         </ul>
                     </div>
@@ -183,6 +185,7 @@
                                 <img src="assets/imagens/tailwind.svg" alt="Tailwind CSS" title="Tailwind CSS">
                                 <img src="assets/imagens/vite.svg" alt="Vite" title="Vite">
                                 <img src="assets/imagens/sql.svg" alt="SQL" title="SQL">
+                                <img src="assets/imagens/mongodb.svg" alt="MongoDB" title="MongoDB">
                             </div>
                         </div>
                         <div class="galeria">
@@ -197,6 +200,65 @@
                             <button type="button" class="item" onclick="abrirImagem(this)">
                                 <img src="assets/imagens/space-configuracoes.png" alt="Space - Configurações de sistema" loading="lazy">
                                 <span class="legenda">Configurações de sistema</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="lightbox" onclick="fecharImagem(event)">
+                    <button type="button" class="fechar" aria-label="Fechar">&times;</button>
+                    <img src="" alt="">
+                    <p class="legenda"></p>
+                </div>
+            </section>
+            <section id="crm" class="sistema">
+                <div class="content">
+                    <h3 class="titulo">Exent CRM - Sistema Comercial</h3>
+                    <p class="sub">CRM interno do time comercial da Exent, desenvolvido por mim de ponta a ponta com apoio de ferramentas de IA, e em uso com todo o histórico migrado do Pipedrive.</p>
+                    <div class="box-space">
+                        <div class="info">
+                            <p class="descricao">Inspirado no Pipedrive, o CRM organiza todo o caminho comercial: o lead chega pelo site, é triado e distribuído, vira negócio no Kanban e é acompanhado com atividades e anotações até o ganho ou a perda.</p>
+                            <p class="subtitulo">Principais funcionalidades</p>
+                            <ul class="modulos">
+                                <li><b>Leads</b> - Caixa de entrada, triagem e distribuição automática (roleta)</li>
+                                <li><b>Negócios</b> - Kanban com etapas configuráveis, ganho e perda com motivo</li>
+                                <li><b>Pessoas e Empresas</b> - Fichas com atividades e linha do tempo</li>
+                                <li><b>Segurança</b> - Papéis de acesso e regras de visibilidade no próprio banco (RLS)</li>
+                                <li><b>Integrações</b> - Leads via webhook do site WordPress e migração dos dados do Pipedrive</li>
+                                <li>Temas claro e escuro</li>
+                            </ul>
+                            <p class="subtitulo">Tecnologias utilizadas</p>
+                            <div class="tecnologias">
+                                <img src="assets/imagens/react.svg" alt="React" title="React">
+                                <img src="assets/imagens/typescript.svg" alt="TypeScript" title="TypeScript">
+                                <img src="assets/imagens/tanstack.svg" alt="TanStack Start" title="TanStack Start">
+                                <img src="assets/imagens/tailwind.svg" alt="Tailwind CSS" title="Tailwind CSS">
+                                <img src="assets/imagens/vite.svg" alt="Vite" title="Vite">
+                                <img src="assets/imagens/postgresql.svg" alt="PostgreSQL" title="PostgreSQL">
+                                <img src="assets/imagens/supabase.svg" alt="Supabase" title="Supabase">
+                                <img src="assets/imagens/lovable.svg" alt="Lovable" title="Lovable">
+                                <img src="assets/imagens/claude.svg" alt="Claude Code" title="Claude Code">
+                            </div>
+                        </div>
+                        <div class="galeria">
+                            <button type="button" class="item destaque" onclick="abrirImagem(this)">
+                                <img src="assets/imagens/crm-inicio.jpg" alt="Exent CRM - Tela inicial com indicadores e gráficos" loading="lazy">
+                                <span class="legenda">Início - Indicadores e gráficos</span>
+                            </button>
+                            <button type="button" class="item" onclick="abrirImagem(this)">
+                                <img src="assets/imagens/crm-negocios.jpg" alt="Exent CRM - Negócios em Kanban" loading="lazy">
+                                <span class="legenda">Negócios - Kanban</span>
+                            </button>
+                            <button type="button" class="item" onclick="abrirImagem(this)">
+                                <img src="assets/imagens/crm-leads.jpg" alt="Exent CRM - Caixa de entrada de leads" loading="lazy">
+                                <span class="legenda">Leads - Caixa de entrada</span>
+                            </button>
+                            <button type="button" class="item" onclick="abrirImagem(this)">
+                                <img src="assets/imagens/crm-lead-detalhe.jpg" alt="Exent CRM - Detalhe do lead" loading="lazy" style="object-position: top right;">
+                                <span class="legenda">Detalhe do lead</span>
+                            </button>
+                            <button type="button" class="item" onclick="abrirImagem(this)">
+                                <img src="assets/imagens/crm-tema-claro.jpg" alt="Exent CRM - Tela inicial no tema claro" loading="lazy">
+                                <span class="legenda">Tema claro</span>
                             </button>
                         </div>
                     </div>
@@ -240,6 +302,10 @@
                         <div class="habilidade">
                             <h4 class="titulo">SQL</h4>
                             <img src="assets/imagens/sql.svg" alt="SQL">
+                        </div>
+                        <div class="habilidade">
+                            <h4 class="titulo">TanStack</h4>
+                            <img src="assets/imagens/tanstack.svg" alt="TanStack">
                         </div>
                     </div>
 
@@ -293,6 +359,18 @@
                             <h4 class="titulo">Wordpress</h4>
                             <img src="assets/imagens/wordpress.svg" alt="Wordpress">
                         </div>
+                        <div class="habilidade">
+                            <h4 class="titulo">PostgreSQL</h4>
+                            <img src="assets/imagens/postgresql.svg" alt="PostgreSQL">
+                        </div>
+                        <div class="habilidade">
+                            <h4 class="titulo">MongoDB</h4>
+                            <img src="assets/imagens/mongodb.svg" alt="MongoDB">
+                        </div>
+                        <div class="habilidade">
+                            <h4 class="titulo">Supabase</h4>
+                            <img src="assets/imagens/supabase.svg" alt="Supabase">
+                        </div>
                     </div>
 
                     <h4 class="categoria">Ferramentas e Infraestrutura</h4>
@@ -308,6 +386,10 @@
                         <div class="habilidade">
                             <h4 class="titulo">Claude Code</h4>
                             <img src="assets/imagens/claude.svg" alt="Claude Code">
+                        </div>
+                        <div class="habilidade">
+                            <h4 class="titulo">Lovable</h4>
+                            <img src="assets/imagens/lovable.svg" alt="Lovable">
                         </div>
                     </div>
                 </div>

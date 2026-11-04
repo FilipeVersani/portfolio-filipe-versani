@@ -1,4 +1,4 @@
-const palavras = ["Laravel", "React", "TypeScript", "Tailwind CSS", "SQL", "JavaScript", "PHP", "Wordpress"];
+const palavras = ["Laravel", "React", "TypeScript", "Tailwind CSS", "SQL", "PostgreSQL", "JavaScript", "PHP", "Wordpress"];
 
 // Função para digitar uma palavra lentamente
 function digitarPalavra(palavra, index, velocidade) {
@@ -113,7 +113,7 @@ function voltarCard(button) {
 // Galeria Space (lightbox)
 
 function abrirImagem(item) {
-  const lightbox = document.querySelector('#space .lightbox');
+  const lightbox = item.closest('section').querySelector('.lightbox');
   const imagem = item.querySelector('img');
   lightbox.querySelector('img').src = imagem.src;
   lightbox.querySelector('img').alt = imagem.alt;
@@ -124,7 +124,7 @@ function abrirImagem(item) {
 
 function fecharImagem(event) {
   if (event && event.target.tagName === 'IMG') return;
-  document.querySelector('#space .lightbox').classList.remove('aberto');
+  document.querySelectorAll('.lightbox.aberto').forEach(lightbox => lightbox.classList.remove('aberto'));
   document.body.classList.remove('trava-scroll');
 }
 
@@ -148,11 +148,12 @@ function marcarReveal(seletor, passo = 0, colunas = 0) {
 
 marcarReveal('#sobre-mim .esq > *', 0.08);
 marcarReveal('#sobre-mim .area-foto');
-marcarReveal('#experiencia .titulo, #space .content > .titulo, #space .content > .sub, #habilidades .content > .titulo, #habilidades .categoria, #projetos .content > .titulo, #projetos .content > .sub');
+marcarReveal('#experiencia .titulo, #space .content > .titulo, #space .content > .sub, #crm .content > .titulo, #crm .content > .sub, #habilidades .content > .titulo, #habilidades .categoria, #projetos .content > .titulo, #projetos .content > .sub');
 marcarReveal('#experiencia .box-experiencia');
 marcarReveal('#experiencia .formacao-item', 0.1);
-marcarReveal('#space .info');
+marcarReveal('#space .info, #crm .info');
 marcarReveal('#space .galeria .item', 0.12);
+marcarReveal('#crm .galeria .item', 0.12);
 document.querySelectorAll('#habilidades .box-habilidades').forEach(grupo => {
   marcarReveal(grupo.querySelectorAll('.habilidade'), 0.05);
 });
